@@ -2,7 +2,7 @@ server:
   port: 6666
 spring:
   application:
-    name: spring-cloud-eureka-client
+    name: spring-cloud-config-client
 eureka:
   instance:
     preferIpAddress: true
