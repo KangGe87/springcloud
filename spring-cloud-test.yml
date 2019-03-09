@@ -1,15 +1,15 @@
 server:
-  port: 7777
+  port: 6666
 spring:
   application:
     name: spring-cloud-eureka-client
 eureka:
   instance:
     preferIpAddress: true
-    #ÕâÑùĞ´eureka·şÎñ×¢²áÖĞĞÄ»áÏÔÊ¾±¾»úip+¶Ë¿ÚºÅ
+    #è¿™æ ·å†™eurekaæœåŠ¡æ³¨å†Œä¸­å¿ƒä¼šæ˜¾ç¤ºæœ¬æœºip+ç«¯å£å·
     instanceId: ${spring.cloud.client.ipAddress}:${server.port}
-    #ÕâÑùĞ´eureka·şÎñ×¢²áÖĞĞÄ»áÏÔÊ¾ÏîÄ¿ÃûºÍ¶Ë¿ÚºÅ
+    #è¿™æ ·å†™eurekaæœåŠ¡æ³¨å†Œä¸­å¿ƒä¼šæ˜¾ç¤ºé¡¹ç›®åå’Œç«¯å£å·
     #instanceId: ${spring.application.name}:${server.port}
   client:
     serviceUrl:
-      defaultZone: http://192.168.9.129:1111/eureka/  #×¢²áÖĞĞÄµØÖ·
+      defaultZone: http://192.168.9.129:1111/eureka/  #æ³¨å†Œä¸­å¿ƒåœ°å€
