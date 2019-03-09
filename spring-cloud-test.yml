@@ -12,4 +12,4 @@ eureka:
     #instanceId: ${spring.application.name}:${server.port}
   client:
     serviceUrl:
-      defaultZone: http://192.168.9.129:1111/eureka/  #注册中心地址
+      defaultZone: http://192.168.9.129:1111 #注册中心地址
