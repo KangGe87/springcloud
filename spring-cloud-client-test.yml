@@ -9,7 +9,7 @@ eureka:
   instance:
     preferIpAddress: true
     #这样写eureka服务注册中心会显示本机ip+端口号
-    instanceId: ${spring.cloud.client.ip-address}:${server.port}
+    instanceId: ${spring.cloud.client.ipaddress}:${server.port}
   client:
     serviceUrl:
       defaultZone: http://192.168.9.129:1111/eureka/
