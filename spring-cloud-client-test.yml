@@ -6,12 +6,12 @@ spring:
 eureka:
   instance:
     preferIpAddress: true
-    #ÕâÑùĞ´eureka·şÎñ×¢²áÖĞĞÄ»áÏÔÊ¾±¾»úip+¶Ë¿ÚºÅ
+    #è¿™æ ·å†™eurekaæœåŠ¡æ³¨å†Œä¸­å¿ƒä¼šæ˜¾ç¤ºæœ¬æœºip+ç«¯å£å·
     instanceId: ${spring.cloud.client.ipAddress}:${server.port}
   client:
     serviceUrl:
       defaultZone: http://192.168.9.129:1111/eureka/
-#ĞÂ°æÅäÖÃ£¬·ñÔòºóÃædashboardÎŞ·¨ÕÒµ½hystrix.stream
+#æ–°ç‰ˆé…ç½®ï¼Œå¦åˆ™åé¢dashboardæ— æ³•æ‰¾åˆ°hystrix.stream.
 management:
   endpoints:
     web:
