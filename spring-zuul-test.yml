@@ -11,5 +11,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://192.168.9.129:1111/eureka/
+zuul:
+  routes:
+    eagle-api: /eagle/**
 
 
