@@ -1,0 +1,18 @@
+server:
+  port: 8844
+spring:
+  application:
+    name: spring-zuul
+eureka:
+
+  instance:
+    preferIpAddress: true
+    #这样写eureka服务注册中心会显示本机ip+端口号
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+
+    service-url:
+
+      defaultZone: http://192.168.9.129:1111/eureka/
+
+
