@@ -13,11 +13,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://192.168.9.129:1111/eureka/ #注册中心地址
-rabbitmq:    					        #本地环境不需要配置mq
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-security:                                #
+security:                                
   basic:
     enabled: false
