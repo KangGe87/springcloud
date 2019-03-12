@@ -1,0 +1,19 @@
+server:
+  port: 8855
+spring:
+  application:
+    name: spring-cloud-client
+eureka:
+  instance:
+    preferIpAddress: true
+    #这样写eureka服务注册中心会显示本机ip+端口号
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.9.129:1111/eureka/
+#新版配置，否则后面dashboard无法找到hystrix.stream
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
